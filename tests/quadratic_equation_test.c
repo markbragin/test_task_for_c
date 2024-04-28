@@ -23,9 +23,9 @@ int test(double a, double b, double c, Roots expected)
         return 0;
     } else {
         fprintf(stderr,
-               " Test failed:\n"
+               "Test failed:\n"
                "  Input: a = %f b = %f c = %f\n"
-               "  Expected: %f %f %d\n  Got: %f %f %d\n\n",
+               "  Expected: %f %f %d\n  Got: %f %f %d\n",
                a, b, c, expected.x1,expected.x2, expected.count,
                actual.x1, actual.x2, actual.count);
         return 1;
