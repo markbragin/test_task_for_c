@@ -2,7 +2,6 @@
 
 #include <math.h>
 
-
 Roots solve_equation(double a, double b, double c)
 {
     Roots roots = {0, 0, 0};

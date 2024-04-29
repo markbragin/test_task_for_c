@@ -3,7 +3,6 @@
 #ifndef _QUADRATIC_EQUATION_H_
 #define _QUADRATIC_EQUATION_H_
 
-
 /* Stuct for solution
  *
  * If a == 0 [and b == 0 [and c == 0]] function solves equation anyway.

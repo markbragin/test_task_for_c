@@ -11,8 +11,8 @@ int double_eq(double a, double b)
 
 int roots_eq(Roots r1, Roots r2)
 {
-    return double_eq(r1.x1, r2.x1) && double_eq(r1.x2, r2.x2) &&
-        r1.count == r2.count;
+    return double_eq(r1.x1, r2.x1) && double_eq(r1.x2, r2.x2)
+        && r1.count == r2.count;
 }
 
 int test(double a, double b, double c, Roots expected)
@@ -23,11 +23,11 @@ int test(double a, double b, double c, Roots expected)
         return 0;
     } else {
         fprintf(stderr,
-               "Test failed:\n"
-               "  Input: a = %f b = %f c = %f\n"
-               "  Expected: %f %f %d\n  Got: %f %f %d\n",
-               a, b, c, expected.x1,expected.x2, expected.count,
-               actual.x1, actual.x2, actual.count);
+                "Test failed:\n"
+                "  Input: a = %f b = %f c = %f\n"
+                "  Expected: %f %f %d\n  Got: %f %f %d\n",
+                a, b, c, expected.x1, expected.x2, expected.count, actual.x1,
+                actual.x2, actual.count);
         return 1;
     }
 }
